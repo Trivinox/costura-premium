@@ -32,7 +32,7 @@
   <div class="row bg-dark" id="section1">
     <div class="left col-lg-7">
       <div class="divider divider-title row">
-        <div class="divider-logo col-4">
+        <div class="divider-logo col-4 d-flex justify-content-center align-items-center">
           <img class="logo w-100" src="images/costura-premium-logo-2-1.png" alt="costura-premium-logo" />
         </div>
         <div class="col-8">
@@ -47,15 +47,15 @@
             <tbody>
               <tr>
                 <th scope="row" class=""><i class="fas fa-certificate"></i></th>
-                <td class="">Certificado Incluido</td>
+                <td class="">Incluye Certificado</td>
               </tr>
               <tr>
                 <th scope="row" class=""><i class="fas fa-address-card"></i></th>
-                <td class="">Realizado por: Nombre</td>
+                <td class="">Realizado por: Isabel Irene Villagómez</td>
               </tr>
               <tr>
                 <th scope="row" class=""><i class="fas fa-tasks"></i></th>
-                <td class="">No necesita un nivel inicial</td>
+                <td class="">No necesita conocimientos previos</td>
               </tr>
             </tbody>
           </table>
@@ -79,10 +79,7 @@
     <div class="right col-lg-5">
       <div class="divider divider-main-video">
         <div class="ratio ratio-16x9 border border-warning border-3">
-          <iframe src="videos/sample05.mp4" allow="clipboard-write;" allowfullscreen seamless></iframe>
-          <!-- <video controls>
-            <source src="videos/SampleVideo_720x480_2mb.mp4" type="video/mp4">
-          </video> -->
+          <iframe src="videos/main.mp4" allow="clipboard-write;" allowfullscreen seamless></iframe>
         </div>
       </div>
       <div class="divider divider-enter text-center">
@@ -111,12 +108,15 @@
         </dl>
       </div>
       <div class="divider divider-description accordion accordion-flush" id="descriptionAccordion">
-        <a class="text-decoration-none" data-bs-toggle="collapse" href="#collapseDescription">
-          <h3 class="fw-bold lh-lg text-primary">
-            Descripción del programa <i class="fas fa-chevron-down"></i>
-          </h3>
-        </a>
-        <div class="collapse" id="collapseDescription">
+        <div class="accordion-item">
+          <button class="accordion-button collapsed bg-light p-0 border-bottom border-3 border-dark" type="button"
+            data-bs-toggle="collapse" data-bs-target="#collapseDescription">
+            <h3 class="accordion-header fw-bold lh-lg text-primary text-decoration-none" id="titleDescription">
+              Descripción del programa
+            </h3>
+          </button>
+        </div>
+        <div class="collapse border-bottom border-start border-end border-1 border-dark p-3" id="collapseDescription">
           <p>En este curso de corte y confección online con más de 400 clases en las cuales aprenderás todo el proceso
             de
             confección textil, desde cómo tomarte las medidas y preparar los patrones bases, hasta cómo modificarlos
@@ -137,49 +137,91 @@
             para mangas, distintos tipos de escotes y ruedos.</p>
         </div>
       </div>
-      <div class="divider divider-storytelling border-top border-3 border-dark">
+      <div class="divider divider-method">
         <div class="ratio ratio-16x9">
           <video controls>
-            <source src="videos/sample02.mp4" type="video/mp4">
+            <source src="videos/method.mp4" type="video/mp4">
           </video>
         </div>
       </div>
-      <div class="divider">
-        <img class="w-100" src="images/storytelling.jpg" alt="stock-img">
+      <div class="divider divider-storytelling text-center">
+        <p><span class="fw-bold">Costura Premium</span> es una novedosa academia digital que te certifica
+          internacionalmente donde aprenderás el paso a paso de cómo crear y dominar el arte tus propios diseños en el
+          mundo de la moda.</p>
+        <p>Si estás cansado de no encontrar diseños geniales para ti, si quieres ser único y diferenciarte de los demás
+          créalos tú mismo. La primera impresión es lo primero que vemos con los ojos. La vestimenta es algo que todos
+          en la sociedad usamos a diario, aunque algunos no estén interesados en la moda, sin embargo, si quieres crear
+          marca personal para que las personas te recuerden es completamente básico y necesario mostrar conocimiento de
+          ella.</p>
+        <p>¿Alguna vez has querido comprar una prenda, pero está fuera de tu presupuesto? Viste como lo hacen tus
+          artistas favoritos.</p>
+        <p>¿Crees que para vestir como lo hacen ellos debes hacer una gran inversión o si son prendas exclusivas ir
+          directamente hacia las grandes marcas para conseguirlas? ¿Alguna vez has querido comprar una prenda, pero está
+          fuera de tu presupuesto?</p>
+        <p>Déjame decirte que tú mismo puedes crear prendas de calidad, que las personas puedan apreciar de una manera
+          tangible para que su durabilidad sea mucho mayor, con el propósito de disfrutar la prenda que soñabas evitando
+          gastar miles de dólares en esta. Pues muchas veces cuando compras tus vestidos favoritos están hechos de tal
+          forma que a las pocas lavadas tenga un desgaste mucho más notorio.</p>
+        <p>¿Piensas que necesitas graduarte para crear diseños genuinos?</p>
+        <p>Ten en cuenta que para aprender algo nuevo y más rápido de manera efectiva necesitas la mentoría de una
+          persona especializada en ese campo. Gracias a las academias se puede tener una experiencia más personalizada y
+          una información mucho más detallada, ya que las academias tienen un enfoque específico.</p>
+        <p>Aprende con nosotros en Costura Premium y...</p>
+        <p>¡¡¡Lúcete como tus marcas favoritas, y sé genuino como solamente tú lo harías!!!</p>
       </div>
       <div class="divider divider-other-works">
         <h3 class="fw-bold lh-lg text-primary">Trabajos realizados por otros estudiantes</h3>
-        <div id="carousel-other-works" class="carousel slide carousel-fade" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <!-- (.carousel-item.d-flex.justify-content-center>img[src="images/other-works/img$$.jpeg" alt="Referencia $$"].d-block.w-50)*11 -->
-            <div class="carousel-item d-flex justify-content-center active"><img src="images/other-works/img01.jpeg"
-                alt="Referencia 01" class="d-block w-50"></div>
-            <div class="carousel-item d-flex justify-content-center"><img src="images/other-works/img02.jpeg"
-                alt="Referencia 02" class="d-block w-50"></div>
-            <div class="carousel-item d-flex justify-content-center"><img src="images/other-works/img03.jpeg"
-                alt="Referencia 03" class="d-block w-50"></div>
-            <div class="carousel-item d-flex justify-content-center"><img src="images/other-works/img04.jpeg"
-                alt="Referencia 04" class="d-block w-50"></div>
-            <div class="carousel-item d-flex justify-content-center"><img src="images/other-works/img05.jpeg"
-                alt="Referencia 05" class="d-block w-50"></div>
-            <div class="carousel-item d-flex justify-content-center"><img src="images/other-works/img06.jpeg"
-                alt="Referencia 06" class="d-block w-50"></div>
-            <div class="carousel-item d-flex justify-content-center"><img src="images/other-works/img07.jpeg"
-                alt="Referencia 07" class="d-block w-50"></div>
-            <div class="carousel-item d-flex justify-content-center"><img src="images/other-works/img08.jpeg"
-                alt="Referencia 08" class="d-block w-50"></div>
-            <div class="carousel-item d-flex justify-content-center"><img src="images/other-works/img09.jpeg"
-                alt="Referencia 09" class="d-block w-50"></div>
-            <div class="carousel-item d-flex justify-content-center"><img src="images/other-works/img10.jpeg"
-                alt="Referencia 10" class="d-block w-50"></div>
-            <div class="carousel-item d-flex justify-content-center"><img src="images/other-works/img11.jpeg"
-                alt="Referencia 11" class="d-block w-50"></div>
+        <div id="carousel-other-works" class="carousel carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner d-flex align-items-center">
+            <div class="carousel-item d-flex justify-content-center active" data-bs-interval="5000"><img
+                src="images/other-works/img01.png" alt="Referencia 01"></div>
+            <div class="carousel-item d-flex justify-content-center" data-bs-interval="5000"><img
+                src="images/other-works/img02.jpg" alt="Referencia 02"></div>
+            <div class="carousel-item d-flex justify-content-center" data-bs-interval="5000"><img
+                src="images/other-works/img03.png" alt="Referencia 03"></div>
+            <div class="carousel-item d-flex justify-content-center" data-bs-interval="5000"><img
+                src="images/other-works/img04.png" alt="Referencia 04"></div>
+            <div class="carousel-item d-flex justify-content-center" data-bs-interval="5000"><img
+                src="images/other-works/img05.png" alt="Referencia 05"></div>
+            <div class="carousel-item d-flex justify-content-center" data-bs-interval="5000"><img
+                src="images/other-works/img06.png" alt="Referencia 06"></div>
+            <div class="carousel-item d-flex justify-content-center" data-bs-interval="5000"><img
+                src="images/other-works/img07.jpg" alt="Referencia 07"></div>
+            <div class="carousel-item d-flex justify-content-center" data-bs-interval="5000"><img
+                src="images/other-works/img08.jpg" alt="Referencia 08"></div>
+            <div class="carousel-item d-flex justify-content-center" data-bs-interval="5000"><img
+                src="images/other-works/img09.jpg" alt="Referencia 09"></div>
+            <div class="carousel-item d-flex justify-content-center" data-bs-interval="5000"><img
+                src="images/other-works/img10.jpg" alt="Referencia 10"></div>
           </div>
-          <button class="carousel-control-prev text-dark" type="button" data-bs-target="#carousel-other-works"
+          <div class="carousel-spacer"></div>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-other-works" data-bs-slide-to="0"
+              class="active bg-secondary"></button>
+            <button type="button" data-bs-target="#carousel-other-works" data-bs-slide-to="1"
+              class="bg-secondary"></button>
+            <button type="button" data-bs-target="#carousel-other-works" data-bs-slide-to="2"
+              class="bg-secondary"></button>
+            <button type="button" data-bs-target="#carousel-other-works" data-bs-slide-to="3"
+              class="bg-secondary"></button>
+            <button type="button" data-bs-target="#carousel-other-works" data-bs-slide-to="4"
+              class="bg-secondary"></button>
+            <button type="button" data-bs-target="#carousel-other-works" data-bs-slide-to="5"
+              class="bg-secondary"></button>
+            <button type="button" data-bs-target="#carousel-other-works" data-bs-slide-to="6"
+              class="bg-secondary"></button>
+            <button type="button" data-bs-target="#carousel-other-works" data-bs-slide-to="7"
+              class="bg-secondary"></button>
+            <button type="button" data-bs-target="#carousel-other-works" data-bs-slide-to="8"
+              class="bg-secondary"></button>
+            <button type="button" data-bs-target="#carousel-other-works" data-bs-slide-to="9"
+              class="bg-secondary"></button>
+          </div>
+          <button class="carousel-control-prev text-secondary" type="button" data-bs-target="#carousel-other-works"
             data-bs-slide="prev">
             <i class="fas fa-chevron-left fa-3x"></i>
           </button>
-          <button class="carousel-control-next text-dark" type="button" data-bs-target="#carousel-other-works"
+          <button class="carousel-control-next text-secondary" type="button" data-bs-target="#carousel-other-works"
             data-bs-slide="next">
             <i class="fas fa-chevron-right fa-3x"></i>
           </button>
@@ -187,38 +229,74 @@
       </div>
       <div class="divider divider-opinions">
         <h3 class="fw-bold lh-lg text-primary">Testimonios de otros estudiantes</h3>
-        <div id="carousel-opinions" class="carousel slide carousel-fade" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active d-flex justify-content-center">
-              <video controls class="d-block w-75">
-                <source src="videos/sample03.mp4" type="video/mp4">
+        <div id="carousel-opinions" class="carousel carousel-fade " data-bs-ride="carousel">
+          <div class="carousel-inner v-video d-flex align-items-center">
+            <div class="carousel-item active h-100 d-flex justify-content-center">
+              <video controls>
+                <source src="videos/testimonies/testimony01.mp4" type="video/mp4">
               </video>
             </div>
-            <div class="carousel-item d-flex justify-content-center">
-              <video controls class="d-block w-75">
-                <source src="videos/sample04.mp4" type="video/mp4">
+            <div class="carousel-item h-video d-flex justify-content-center">
+              <video controls>
+                <source src="videos/testimonies/testimony02.mp4" type="video/mp4">
               </video>
             </div>
-            <div class="carousel-item d-flex justify-content-center">
-              <video controls class="d-block w-75">
-                <source src="videos/sample01.mp4" type="video/mp4">
+            <div class="carousel-item v-video h-100 d-flex justify-content-center">
+              <video controls>
+                <source src="videos/testimonies/testimony03.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="carousel-item v-video h-100 d-flex justify-content-center">
+              <video controls>
+                <source src="videos/testimonies/testimony04.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="carousel-item v-video h-100 d-flex justify-content-center">
+              <video controls>
+                <source src="videos/testimonies/testimony05.mp4" type="video/mp4">
               </video>
             </div>
           </div>
-          <button class="carousel-control-prev text-dark" type="button" data-bs-target="#carousel-opinions"
+          <div class="carousel-spacer"></div>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-opinions" data-bs-slide-to="0"
+              class="bg-secondary active"></button>
+            <button type="button" data-bs-target="#carousel-opinions" data-bs-slide-to="1"
+              class="bg-secondary"></button>
+            <button type="button" data-bs-target="#carousel-opinions" data-bs-slide-to="2"
+              class="bg-secondary"></button>
+            <button type="button" data-bs-target="#carousel-opinions" data-bs-slide-to="3"
+              class="bg-secondary"></button>
+            <button type="button" data-bs-target="#carousel-opinions" data-bs-slide-to="4"
+              class="bg-secondary"></button>
+          </div>
+          <button class="carousel-control-prev text-secondary" type="button" data-bs-target="#carousel-opinions"
             data-bs-slide="prev">
             <i class="fas fa-chevron-left fa-3x"></i>
           </button>
-          <button class="carousel-control-next text-dark" type="button" data-bs-target="#carousel-opinions"
+          <button class="carousel-control-next text-secondary" type="button" data-bs-target="#carousel-opinions"
             data-bs-slide="next">
             <i class="fas fa-chevron-right fa-3x"></i>
           </button>
         </div>
       </div>
-      <div class="divider divider-action">
-        <img class="w-100" src="images/call-to-action.jpg" alt="">
+      <div class="divider divider-action border border-warning border-2 rounded bg-dark">
+        <h2 class="text-uppercase text-light fw-bold text-center">Atención Disponible hasta hoy</h2>
+        <h5 class="text-capitalize text-light text-center">Última oportunidad para inscribirse al programa con el 50% de
+          descuento</h5>
+        <div class="my-5">
+          <p class="text-light text-center my-0"><span class="fw-bold">Recuerda: </span>Este es un curso 100% online</p>
+          <p class="text-danger text-center my-0">Y puedes hacer tu registro hoy y comenzar el curso el día y la hora
+            que gustes</p>
+        </div>
+        <div class="d-flex justify-content-center">
+          <img src="images/priceChange.png" alt="Cambio de precio" class="w-75">
+        </div>
         <div class="divider divider-enter text-center">
           <button class="btn btn-lg btn-warning fw-bold text-light">Ingresar al programa</button>
+        </div>
+        <div class="d-flex justify-content-center">
+          <img src="images/safeBuy.png" alt="Cambio de precio" class="w-50">
         </div>
       </div>
       <div class="divider divider-sales">
@@ -328,86 +406,64 @@
         <h3 class="fw-bold lh-lg text-primary">Temario</h3>
         <dl class="row mb-0 pb-0">
           <dl class="row mb-0 pb-0">
-            <dt class="col-3 p-0 ps-5">Módulo 01:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 02:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 03:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 04:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 05:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 06:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 07:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 08:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 09:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 10:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 11:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 12:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 13:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 14:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 15:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 16:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 17:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 18:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 19:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 20:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 21:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 22:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 23:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 24:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 25:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 26:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 27:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 28:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 29:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 30:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 31:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 32:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 33:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 34:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 35:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 36:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 37:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 38:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 39:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
-            <dt class="col-3 p-0 ps-5">Módulo 40:</dt>
-            <dd class="col-9 p-0">Lorem ipsum</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 01: </span>Lorem Ipsum</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 02: </span>Lorem Ipsum</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 03: </span>Acondiciona tu espacio</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 04: </span>Siluetas y textilería</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 05: </span>Medidas perfectas</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 06: </span>Patrones</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 07: </span>¡A coser!</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 08: </span>Terminado excelente</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 09: </span>Faldas</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 10: </span>Cuellos</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 11: </span>Patronaje de pantalón</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 12: </span>Ojales</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 13: </span>Falda campana</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 14: </span>Extra satin</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 15: </span>Extra siza y manga</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 16: </span>Extra de pantalón y short</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 17: </span> 1. Retroalimentación del pantalón</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 18: </span> 2. Pantalón bota ancha</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 19: </span> 3. Pantalón forrado</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 20: </span> 4. Short forrado</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 21: </span> 5. Pantalón niña</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 22: </span> 6. Pantalón yoger</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 23: </span>Extra vestido y blusones</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 24: </span> 1. Vestidos 2</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 25: </span>Extra bretel</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 26: </span>Extra cuellos</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 27: </span>Extra blusas</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 28: </span>Extra bolsillos</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 29: </span>Extra blusa amarrada</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 30: </span>Extra falda</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 31: </span>Corsetería básica</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 32: </span>Extra forrados 1</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 33: </span>Extra forrados 2</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 34: </span>Extra forrados 3</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 35: </span>Cruzados</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 36: </span>Accidente con un vestido</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 37: </span>Vestido vintage</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 38: </span><span class="fw-italic">Bonus!!
+              </span>Regalo lencería de máquina</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 39: </span><span class="fw-italic">Bonus!!
+              </span>Lencería íntima femenina</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 40: </span><span class="fw-italic">Bonus!!
+              </span>San Valentín premium</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 41: </span><span class="fw-italic">Bonus!!
+              </span>Regalo día de la madre</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 42: </span><span class="fw-italic">Bonus!!
+              </span>Cómo arreglar un pantalón de hombre</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 43: </span><span class="fw-italic">Bonus!!
+              </span>Pantalón niño</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 44: </span><span class="fw-italic">Bonus!!
+              </span>Cenefa globo entubado</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 45: </span><span class="fw-italic">Bonus!!
+              </span>Transforma tu prenda</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 46: </span><span class="fw-italic">Bonus!!
+              </span>Porta tijeras</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 47: </span><span class="fw-italic">Bonus!!
+              </span>Descarga mis reglas</dd>
+            <dd class="text-capitalize"><span class="fw-bold">Módulo 48: </span>Clases en vivo</dd>
           </dl>
         </dl>
       </div>
@@ -415,21 +471,28 @@
         <img class="w-100" src="images/certificate.jpg" alt="certificate">
       </div>
       <div class="divider divider-biography">
-        <p>Desarrollado Por: <span class="fw-bold">ISABEL IRENE VILLAGÓMEZ</span>. Nació en Ecuador y Desde los 10 años está en este lindo mundo de
+        <p>Desarrollado Por: <span class="fw-bold">ISABEL IRENE VILLAGÓMEZ</span>. Nació en Ecuador y Desde los 10 años
+          está en este lindo mundo de
           la costura, tiene más de 15 años enseñando Modistería básica y alta costura. Creadora del programa Costura
           Premium con más de 20 mil alumnos satisfechos en todo el mundo. Tiene el don de llegarle a las personas para
           transmitirles energía y empoderarlas con sus sueños.</p>
       </div>
-      <div class="divider divider-disclaimer">
-        <img class="w-100" src="images/stockphoto.jpg" alt="disclaimer">
+      <div class="divider divider-disclaimer fw-light px-4">
+        <h6><u>Descargo de Responsabilidad:</u></h6>
+        <p>
+          <small>Cada estudiante tiene resultados diferentes, cada testimonio es una muestra de lo que podría lograr,
+            pero no se asegura que tenga ese resultado.
+          </small>
+        </p>
+        <p>
+          <small>Tienes hasta 7 días a partir de la compra para probar los «programas». Si dentro de ese período
+            nuestro programa no cumple y/o supera tus expectativas, vamos a devolver tu dinero sin hacer preguntas. Te
+            lo garantiza hotmart®, la plataforma donde vas a realizar el pago.
+          </small>
+        </p>
       </div>
     </div>
   </div>
-  <!--
-      <div class="row" id="section3">
-        <div class="left col-lg-7"></div>
-        <div class="right col-lg-5"></div>
-      -->
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
