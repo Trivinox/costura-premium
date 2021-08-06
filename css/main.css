@@ -1,9 +1,15 @@
 #section1 {
   margin: 2% 0 0;
   padding: 0 10%;
+  z-index: -1;
+  position: relative;
 }
 
 #section2 {
+  margin: 0 10%;
+}
+
+#section3 {
   margin: 0 10% 2%;
 }
 
@@ -11,30 +17,18 @@
   padding: 15px 0;
 }
 
-/* DIVIDER TITLE*/
-/* DIVIDER INFO*/
-/* DIVIDER MAIN VIDEO*/
-/* DIVIDER ENTER*/
-/* DIVIDER ABILITIES*/
-/* DIVIDER DESCRIPTION*/
-/* DIVIDER STORYLTELLING*/
 .divider-storytelling p {
   font-family: Montserrat;
 }
-/* DIVIDER OTHER WORKS*/
-.carousel-spacer{
+
+.carousel-spacer {
   height: 50px;
 }
-/* DIVIDER OPINIONS*/
+
 .carousel-inner {
   height: 600px;
 }
+
 .h-video {
   height: 60%;
 }
-/* DIVIDER ACTION*/
-/* DIVIDER SALES*/
-/* DIVIDER LESSONS*/
-/* DIVIDER CERTIFICATE*/
-/* DIVIDER BIOGRAPHY*/
-/* DIVIDER DISCLAIMER*/
