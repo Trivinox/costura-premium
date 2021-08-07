@@ -4400,7 +4400,7 @@ fieldset:disabled .btn {
 }
 .carousel-control-prev,
 .carousel-control-next {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   bottom: 0;
   z-index: 1;
@@ -4470,7 +4470,7 @@ fieldset:disabled .btn {
   box-sizing: content-box;
   flex: 0 1 auto;
   width: 30px;
-  height: 3px;
+  height: 10px; /*MODIFIED*/
   padding: 0;
   margin-right: 3px;
   margin-left: 3px;
